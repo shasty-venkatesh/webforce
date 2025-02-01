@@ -7,7 +7,6 @@ import Footer from "./Footer";
 import Household from "./Household";
 
 
-
 function User() {
   return <div>
     <Header />

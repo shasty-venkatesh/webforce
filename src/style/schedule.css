@@ -7,7 +7,8 @@
   width: 50rem;
 }
 .scheduleform .backbutton,
-.checkstatuspage .backbutton {
+.checkstatuspage .backbutton,
+.workeraddfrom .backbutton {
   margin: 3rem -1rem;
   width: 4rem;
   height: 4rem;
@@ -19,11 +20,13 @@
   margin-bottom: 1rem;
 }
 .scheduleform .backbutton:hover,
-.checkstatuspage .backbutton:hover {
+.checkstatuspage .backbutton:hover,
+.workeraddfrom .backbutton:hover {
   transform: translateX(-20%);
 }
 .scheduleform label,
-.loginsection label {
+.loginsection label,
+.workeraddfrom label {
   display: block;
   margin: 0.5rem 0;
   font-size: larger;
@@ -42,7 +45,8 @@
 .scheduleform input,
 .scheduleform textarea,
 .loginsection input,
-.registersection input {
+.registersection input,
+.workeraddfrom input {
   width: 20rem;
   height: 3rem;
   padding-left: 1rem;
@@ -97,16 +101,19 @@
   color: #8c8c8c;
   font-weight: 400;
 }
-.scheduleform input[type="submit"] {
+.scheduleform input[type="submit"],
+.workeraddfrom input[type="submit"] {
   background-color: #56bd54;
   color: #f6faf5;
   margin-top: 2rem;
   border: none;
 }
-.scheduleform input[type="submit"]:hover {
+.scheduleform input[type="submit"]:hover,
+.workeraddfrom input[type="submit"]:hover {
   background-color: #52db50;
 }
-.scheduleform .scheduleimg {
+.scheduleform .scheduleimg,
+.workeraddfrom .workerimg {
   width: 40rem;
   position: absolute;
   left: 54rem;

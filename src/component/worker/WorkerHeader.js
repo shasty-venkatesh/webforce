@@ -3,41 +3,37 @@ import { Link, useLocation } from "react-router-dom";
 import logoImg from "../../image/logo.png";
 import "../../style/header.css";
 
-function Header() {
+function WorkerHeader() {
   const location = useLocation();
 
   return (
-    <div className="headerbar">
+    <div className="workerheaderbar">
       <header>
         <img src={logoImg} alt="logo" />
         <nav>
           <ul>
             <li>
               <Link
-                className={location.pathname === "/why" ? "active" : "link"}
-                to="/why"
+                className={location.pathname === "/worker" ? "active" : "link"}
+                to="/worker"
               >
-                Why us?
+                Home
               </Link>
             </li>
             <li>
               <Link
-                className={
-                  location.pathname === "/scraprate" ? "active" : "link"
-                }
-                to="/scraprate"
+                className={location.pathname === "/checkstatus" ? "active" : "link"}
+                to="/workerstatus"
               >
-                Scrap Rates
+                Status
               </Link>
             </li>
             <li>
               <Link
-                className={
-                  location.pathname === "/workeradd" ? "active" : "link"
-                }
-                to="/workeradd"
+                className={location.pathname === "/sellingproduct" ? "active" : "link"}
+                to="/sellingproduct"
               >
-                Get Hired
+                Selling
               </Link>
             </li>
           </ul>
@@ -47,4 +43,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default WorkerHeader;

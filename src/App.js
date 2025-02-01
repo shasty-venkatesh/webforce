@@ -5,6 +5,10 @@ import Schedule from "./component/home/Schedule";
 import CheckStatus from "./component/home/CheckStatus";
 import Login from "./component/home/Login";
 import Register from "./component/home/Register";
+import WorkerHome from "./component/worker/WorkerHome";
+import WorkerList from "./component/worker/WorkerStatus";
+import AppointmentForm from "./component/worker/AppointmentForm";
+import Sellingproduct from "./component/worker/Sellingproduct";
 function App() {
   return (
     <BrowserRouter>
@@ -15,6 +19,10 @@ function App() {
         <Route path="/home" element={<User />} />
         <Route path="/schedule" element={<Schedule />} />
         <Route path="/checkstatus" element={<CheckStatus />} />
+        <Route path="/worker" element={<WorkerHome />} />
+        <Route path="/workerstatus" element={<WorkerList />} />
+        <Route path="/workeradd" element={<AppointmentForm />} />
+        <Route path="/sellingproduct" element={<Sellingproduct />} />
       </Routes>
     </BrowserRouter>
   );
